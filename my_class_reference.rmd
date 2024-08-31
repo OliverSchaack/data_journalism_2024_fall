@@ -37,4 +37,16 @@ library(tidyverse)
 print("Hello World")
 ```
 
+```{r}
+print("Three Useful Functions")
+```
+```{r}
+print("1. Variables - Variables allow us to store anything within the given variable. This can be incredibly useful if we are dealing with large chunks of information that a ton of data")
+```
+```{r}
+print("2. Tidyverse - Tidyverse streamlines the ability to complete tasks and to get things done such as loading data into R or reshaping data before analysis")
+```
+```{r}
+print("3. install.package - Instanll package as a function allows you to install a library which then allows you to do data journalism work")
+```
 
