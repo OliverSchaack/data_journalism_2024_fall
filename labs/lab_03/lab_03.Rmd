@@ -77,8 +77,11 @@ md_contribs |>
 
 Q3: Let's look at top individual donors. Write code to generate a list of top donors using name and city, adding up the total amount of contributions. What does the original data say about the top two donors - who are they and what do they do? Do you see anything in the list of top 10 donors that would make you uncertain about the accuracy of these results?
 
-A3:
+A3:The top 2 donors are Daniel Kracov of Rockville with 68 total contributions and Margaret Allen of Baltimore with 45 total contributions. The only thing I see that makes me weary about these results is that there is a significant discrepancy between the number one contributor and the number ten contributor 0f 47 contributions.
 
 ```{r}
-
+md_contribs |>
+  group_by(contributor_name, contributor_city) |> 
+  summarise(total_amount=n()) |>
+  arrange(desc(total_amount))
 ```
